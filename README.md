@@ -1,7 +1,5 @@
-# yolox-bytetrack-sample
-
-[YOLOX](https://github.com/Megvii-BaseDetection/YOLOX)と[ByteTrack](https://github.com/ifzhang/ByteTrack)を用いたMOT(Multiple Object Tracking)のPythonサンプルです。<br>
-YOLOXは[YOLOX-ONNX-TFLite-Sample](https://github.com/Kazuhito00/YOLOX-ONNX-TFLite-Sample)で、ONNXに変換したモデルを使用しています。<br>
+# yolox-bytetrack-mcmot-sample
+[Kazuhito00/yolox-bytetrack-sample](https://github.com/Kazuhito00/yolox-bytetrack-sample)のマルチクラス拡張版です。<br>
 
 https://user-images.githubusercontent.com/37477845/153743142-5715995c-9642-4285-93ce-331f43ec18ef.mp4
 
@@ -12,7 +10,6 @@ https://user-images.githubusercontent.com/37477845/153743142-5715995c-9642-4285-
 * Cython 0.29.27 or later 
 * cython_bbox 0.1.3 or later
 <br>
-※onnxruntime-gpuはonnxruntimeでも動作しますが、推論時間がかかるためGPUを推奨します<br>
 ※Windowsでcython_bbox のインストールが失敗する場合は、GitHubからのインストールをお試しください(2022/02/13時点)<br>
 
 `pip install -e git+https://github.com/samson-wang/cython_bbox.git#egg=cython-bbox`
@@ -79,12 +76,13 @@ Large P6モデルを使用するか否か<br>
 * [Megvii-BaseDetection/YOLOX](https://github.com/Megvii-BaseDetection/YOLOX)
 * [YOLOX-ONNX-TFLite-Sample](https://github.com/Kazuhito00/YOLOX-ONNX-TFLite-Sample)
 * [ByteTrack](https://github.com/ifzhang/ByteTrack)
+* [Kazuhito00/yolox-bytetrack-sample](https://github.com/Kazuhito00/yolox-bytetrack-sample)
 
 # Author
 高橋かずひと(https://twitter.com/KzhtTkhs)
  
 # License 
-yolox-bytetrack-sample is under [MIT License](LICENSE).
+yolox-bytetrack-mcmot-sample is under [MIT License](LICENSE).
 
 # License(Movie)
 サンプル動画は[NHKクリエイティブ・ライブラリー](https://www.nhk.or.jp/archives/creative/)の[ケニア共和国キツイ 町並み(4) ふかんショット](https://www2.nhk.or.jp/archives/creative/material/view.cgi?m=D0002040395_00000)を使用しています。
